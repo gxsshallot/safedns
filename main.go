@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"safedns/validip"
 	"strings"
+
+	"github.com/gaoxiaosong/safedns/validip"
 )
 
 func main() {
