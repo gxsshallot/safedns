@@ -1,4 +1,4 @@
-package validip
+package safedns
 
 import (
 	"context"

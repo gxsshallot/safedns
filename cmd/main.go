@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gaoxiaosong/safedns/validip"
+	"github.com/gaoxiaosong/safedns"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 	lines := strings.Split(string(content), "\n")
 	result := []string{}
 	for _, domain := range lines {
-		ipAddr := validip.ValidIp(domain)
+		ipAddr := safedns.ValidIp(domain)
 		if len(ipAddr) > 0 {
 			result = append(result, fmt.Sprintf("%s %s", ipAddr, domain))
 		}
